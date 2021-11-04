@@ -35,7 +35,6 @@ describe('DevFinance', () => {
 });
 
 
-// Position may only be topLeft, top, topRight, left, center, right, bottomLeft, bottom, bottomRight
 describe('DevFinance', () => {
     it('Adicionar uma nova transação de saída', () => {
         cy.visit('https://devfinance-agilizei.netlify.app/#')
@@ -64,7 +63,6 @@ describe('DevFinance', () => {
 
         cy.contains('button', 'Salvar').click()
 
-        // cy.get('table tbody tr td:last').should('have.length', 1).click()
         cy.get('table tbody tr td:last img').should('have.length', 1).click('center')
 
     });
